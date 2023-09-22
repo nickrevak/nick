@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+<head>
+  <title>NickyR's Stuff</title>
+  
+   <link rel="stylesheet" href="golf.css" type="text/css" charset="utf-8">
+   <script src= "golf.js" type="text/javascript" charset="utf-8"></script>
+    <style>
+      hr{
+         border:1px solid #000000;
+         }
+         </style>
+
+<!-- <style>
+.button {
+  border: none;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+//.button1 {background-color: #4CAF50;} /* Green */
+//.button2 {background-color: #008CBA;} /* Blue */
+//.button1 {font-size: 10px;}
+//.button2 {font-size: 10px;}
+//.button3 {font-size: 10px;}
+
+
+</style>
+-->
+</head>
+<body>
+
+
+
+<div class="container">
+       <div class="image"> <img id="leftNext" src="../golfers/gaito/images/gaito-001.jpg" alt="This is my left image." height= 300 width= auto> </div> 
+      <div class="image"> <img id="rightNext" src="../golfers/revak/images/ezgif-frame-001.jpg" alt="This is right image." height= 300 width= auto> </div>     
+ </div>     
+    
+    <!-- Define buttons for each of our picks ..
+         buttons for previous, and next
+         button to play and button to pause play 
+    -->      
+    <button  type = "button" style = "height:17px;width:51px;color:blue; font-size:9px;" onclick = "leftPrev()"> L Prev</button>
+    <button  type = "button" style = "height:17px;width:51px;color:blue; font-size:9px;" onclick = "leftNext()" > L Next </button>
+    <button  type = "button" id="lp" style = "height:17px;width:51px;color:blue; font-size:9px;" onclick = "leftPlay()" > L Play </button>
+    <button  type = "button" style = "height:17px;width:51px;color:blue; font-size:9px;" onclick = "leftPause()" > L Pause </button>
+     
+     <label style = "height:5px;width:51px;color:blue;font-size:9px;" for="imageNumberL">Image:</label>
+     <input type="text" disabled style = "font-size:6pt;height:10px;width:15px;" id="imageNumberL" value="1" maxlength="3" size="1" name="imageNumberL">
+     <label style = "height:5px;width:51px;color:blue;font-size:9px;" for="totalImagesL">of:</label>
+     <input type="text" disabled style = "font-size:6pt;height:10px;width:15px;" id="totalImagesL" value="90" maxlength="3" size="1" name="totalImagesL">
+     <input type="hidden" id="pauseFlagL" value="0">
+     <br><br>
+     
+     <hr>       
+    <button  type = "button" style = "height:17px;width:51px;color:blue; font-size:9px;"onclick = "rightPrev()" >R Prev </button>
+    <button  type = "button" style = "height:17px;width:51px;color:blue; font-size:9px;"onclick = "rightNext()" >R Next </button>
+    <button  type = "button" id="rp" style = "height:17px;width:51px;color:blue; font-size:9px;"onclick = "rightPlay()" >R Play </button>
+    <button  type = "button" style = "height:17px;width:51px;color:blue; font-size:9px;"onclick = "rightPause()" >R Pause </button>
+
+    <label style = "height:5px;width:51px;color:blue;font-size:9px;" for="imageNumberR">Image:</label>
+    <input type="text" disabled style = "font-size:6pt;height:10px;width:15px;" id="imageNumberR" value="1" maxlength="3" size="1" name="imageNumberR">
+    <label style = "height:5px;width:51px;color:blue;font-size:9px;" for="totalImagesR">of:</label>
+    <input type="text" disabled style = "font-size:6pt;height:10px;width:15px;" id="totalImagesR" value="48" maxlength="3" size="1" name="totalImagesR">
+    <input type="hidden" id="pauseFlagR" value="0"> 
+</body>
+
+
+
+</html>
